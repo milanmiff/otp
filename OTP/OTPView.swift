@@ -27,8 +27,8 @@ struct OTPView: View {
                 TextField("", text: $code.limit(6))
                     .keyboardType(.numberPad)
                     .textContentType(.oneTimeCode) // <- Ovo je novo
-                    //.frame(width: 1, height: 1)
-                    //.opacity(0.001)
+                    .frame(width: 1, height: 1)
+                    .opacity(0.001)
                     .blendMode(.screen)
                     .focused($isKeyboardActive)
             }
